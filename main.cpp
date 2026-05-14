@@ -1,16 +1,7 @@
-#include "graphics.hpp"
+#include "GameMaster.hpp"
 
-using namespace genv;
-
-int main()
-{
-    gout.open(800,600);
-    gout << font("LiberationSans-Regular.ttf",20);
-    gout << text("hello world");
-    gout << refresh;
-    event ev;
-    while(gin >> ev)
-    {
-    }
+int main() {
+    GameMaster game;
+    game.run();
     return 0;
 }
